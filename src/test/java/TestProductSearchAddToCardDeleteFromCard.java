@@ -61,7 +61,7 @@ public class TestProductSearchAddToCardDeleteFromCard {
                 .addProductToCard(product)
                 .clickClosingButton()
         ;
-        pageShopCard = pageMain.navigatePageShopCard().navigatePageShopCard();// первый клик ее
+        pageShopCard = pageMain.navigatePageShopCard().navigatePageShopCard();// первый клик открывает страницу регистрации
         assertTrue(pageShopCard.isProductExistsInCard(product), "Product is not in product card");
         pageShopCard = pageShopCard
                 .deleteRow(product)
